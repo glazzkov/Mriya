@@ -4,33 +4,6 @@
 @import fonts
 // подключение общих настроек для стилей
 @import settings
-
-.head
-  &-background
-    z-index: -1
-    position: absolute
-    top: 0px
-    &__grid
-      display: grid
-      grid-template-columns: 1fr 0px 1fr
-      overflow: hidden
-    &__image
-      transform: translate( -105px, -491px)
-      grid-column: 3/10
-      grid-row-start: 1
-      max-height: 1428px
-      min-height: 1428px
-      mask-image: url("../img/masks/mask.svg")
-      -webkit-mask-image: url("../img/masks/mask.svg")
-      -webkit-mask-repeat: no-repeat
-      -webkit-mask-position: bottom left
-    &__outline
-      transform: translate( -150px, -505px)
-      grid-column: 3/10
-      grid-row-start: 1
-      z-index: -1
-
-p
-  max-width: 1000px
-  margin: auto
-  padding: 50px
+//
+// стили для головы сайта
+@import blocks/head

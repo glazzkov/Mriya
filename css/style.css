@@ -442,10 +442,4 @@ template {
       grid-row-start: 1;
   z-index: -1;
 }
-
-p {
-  max-width: 1000px;
-  margin: auto;
-  padding: 50px;
-}
 /*# sourceMappingURL=style.css.map */
