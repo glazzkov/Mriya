@@ -1,4 +1,5 @@
 .head
+  //стили фона
   &-background
     z-index: -1
     position: absolute
@@ -8,17 +9,64 @@
       grid-template-columns: 1fr 0px 1fr
       overflow: hidden
     &__image
-      transform: translate( -105px, -491px)
+      transform: translate(-191px, -87px)
       grid-column: 3/10
       grid-row-start: 1
-      max-height: 1428px
-      min-height: 1428px
+      max-height: 1024px
+      min-height: 1024px
       mask-image: url("../img/masks/mask.svg")
       -webkit-mask-image: url("../img/masks/mask.svg")
       -webkit-mask-repeat: no-repeat
       -webkit-mask-position: bottom left
     &__outline
-      transform: translate( -150px, -505px)
+      transform: translate(-235px, -505px)
       grid-column: 3/10
       grid-row-start: 1
       z-index: -1
+  //--стили фона
+  //стили хедера
+  &-top
+    padding-top: 2px
+    border-bottom: 1px solid #3d3c3c14
+    &__container
+      height: 80px
+      display: grid
+      align-items: center
+      grid-template-columns: 1fr 66px 1fr
+    &__item
+      display: flex
+      justify-content: space-between
+      &:last-child
+        padding-left: 87px
+    &__nav
+      display: flex
+      justify-content: space-between
+      width: 470px
+    //--стили хедера
+
+.logo
+  padding-top: 5px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  &__image
+    margin: auto
+  &__stars
+    padding-top: 11px
+    max-width: 73px
+    z-index: 1
+  &::after
+    transform: translate(0, -3px)
+    content: ' '
+    position: relative
+    background-color: $color_light
+    width: 88px
+    height: 3px
+    z-index: 0
+
+.sing-in
+  margin-right: 41px
+  margin-left: auto
+  &__text
+    border-bottom: 1px dashed
