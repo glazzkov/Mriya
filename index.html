@@ -26,6 +26,12 @@
             src="img/masks/outline.svg"
             alt=""
           />
+          <div class="weather-background"></div>
+          <img
+            class="weather-outline"
+            src="img/masks/weather-outline.svg"
+            alt=""
+          />
         </div>
         <!-- /.head-background__grid -->
       </div>
@@ -61,7 +67,7 @@
       </header>
       <!-- /.head-top -->
       <section class="head-main container">
-        <div class="head-main__left">
+        <div class="head-main-left">
           <img class="head-main__waves" src="img/icons/waves.svg" alt="" />
           <h3 class="head-main__subtitle text_interactive">
             Family & Health Club
@@ -83,8 +89,49 @@
             <img src="img/icons/down.svg" alt="" />
           </button>
         </div>
-        <!-- /.head-main__left -->
-        <div class="head-main__right in-development">правый</div>
+        <!-- /.head-main-left -->
+        <div class="head-main-right">
+          <div class="head-main__sotial-networks">
+            <a
+              href="#"
+              class="head-main__sotial-link head-main__button head-main__button_round"
+            >
+              <img src="img/icons/Facebook.svg" alt="" />
+            </a>
+            <a
+              href="#"
+              class="head-main__sotial-link head-main__button head-main__button_round"
+            >
+              <img src="img/icons/Twitter.svg" alt="" />
+            </a>
+            <a
+              href="#"
+              class="head-main__sotial-link head-main__button head-main__button_round"
+            >
+              <img src="img/icons/Instagram.svg" alt="" />
+            </a>
+          </div>
+          <div class="weather">
+            <div class="weather__icons">
+              <img
+                class="weather__icon"
+                src="img/icons/weather-icon.svg"
+                alt=""
+              />
+              <img
+                class="weather__location__icon"
+                src="img/icons/location-icon.png"
+                alt=""
+              />
+            </div>
+            <div class="weather__text">
+              <span class="weather__temperature text_light">27°</span>
+              <span class="weather__precipitation text_light">Облачно</span>
+              <span class="weather__location text_light">Ялта, Россия</span>
+            </div>
+          </div>
+        </div>
+        <!-- /.head-main-right -->
       </section>
       <!-- /.head-main -->
     </div>

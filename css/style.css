@@ -464,8 +464,8 @@ a {
 }
 
 .head-background__image {
-  -webkit-transform: translate(-191px, -87px);
-          transform: translate(-191px, -87px);
+  -webkit-transform: translate(-149px, -87px);
+          transform: translate(-149px, -87px);
   -ms-grid-column: 3;
   -ms-grid-column-span: 7;
   grid-column: 3/10;
@@ -474,14 +474,16 @@ a {
   max-height: 1024px;
   min-height: 1024px;
   mask-image: url("../img/masks/mask.svg");
+  mask-repeat: no-repeat;
+  mask-position: bottom left;
   -webkit-mask-image: url("../img/masks/mask.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: bottom left;
 }
 
 .head-background__outline {
-  -webkit-transform: translate(-235px, -505px);
-          transform: translate(-235px, -505px);
+  -webkit-transform: translate(-194px, -505px);
+          transform: translate(-194px, -505px);
   -ms-grid-column: 3;
   -ms-grid-column-span: 7;
   grid-column: 3/10;
@@ -540,7 +542,7 @@ a {
           justify-content: space-between;
 }
 
-.head-main__left {
+.head-main-left {
   max-width: 440px;
   display: block;
   -webkit-box-orient: vertical;
@@ -620,6 +622,7 @@ a {
   height: 64px;
   width: 64px;
   border-radius: 50%;
+  background-color: transparent;
 }
 
 .head-main__line {
@@ -628,6 +631,38 @@ a {
   width: 1px;
   height: 48px;
   background-color: #D9C287;
+}
+
+.head-main__sotial-networks {
+  height: 256px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: translate(64px, 168px);
+          transform: translate(64px, 168px);
+}
+
+.head-main-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo {
@@ -675,6 +710,96 @@ a {
 
 .sing-in__text {
   border-bottom: 1px dashed;
+}
+
+.weather {
+  -webkit-transform: translate(-61px, 13px);
+          transform: translate(-61px, 13px);
+  width: 182px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.weather__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.weather__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.weather__temperature {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.weather__precipitation {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.weather__location {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.weather__location__icon {
+  max-height: 22px;
+}
+
+.weather-background {
+  -webkit-transform: translate(127px, 612px);
+          transform: translate(127px, 612px);
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 7;
+  grid-column: 3/10;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  width: 761px;
+  height: 312px;
+  background-color: #000000a3;
+  mask-image: url("../img/masks/weather-mask.svg");
+  mask-repeat: no-repeat;
+  mask-position: bottom left;
+  -webkit-mask-image: url("../img/masks/weather-mask.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: bottom left;
+}
+
+.weather-outline {
+  -webkit-transform: translate(39px, 611px);
+          transform: translate(39px, 611px);
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 7;
+  grid-column: 3/10;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  z-index: 10;
 }
 
 .in-development {

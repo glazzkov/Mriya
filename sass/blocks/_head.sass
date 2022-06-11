@@ -9,17 +9,19 @@
       grid-template-columns: 1fr 0px 1fr
       overflow: hidden
     &__image
-      transform: translate(-191px, -87px)
+      transform: translate(-149px, -87px)
       grid-column: 3/10
       grid-row-start: 1
       max-height: 1024px
       min-height: 1024px
       mask-image: url("../img/masks/mask.svg")
+      mask-repeat: no-repeat
+      mask-position: bottom left
       -webkit-mask-image: url("../img/masks/mask.svg")
       -webkit-mask-repeat: no-repeat
       -webkit-mask-position: bottom left
     &__outline
-      transform: translate(-235px, -505px)
+      transform: translate(-194px, -505px)
       grid-column: 3/10
       grid-row-start: 1
       z-index: -1
@@ -50,7 +52,8 @@
     height: 730px
     display: flex
     justify-content: space-between
-    &__left
+
+    &-left
       max-width: 440px
       display: block
       flex-direction: column
@@ -96,13 +99,25 @@
         height: 64px
         width: 64px
         border-radius: 50%
+        background-color: transparent
     &__line
       display: block
       margin: 24px 31px
       width: 1px
       height: 48px
       background-color: $color_secondary
-
+    &__sotial-networks
+      height: 256px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      transform: translate(64px, 168px)
+    //
+    &-right
+      display: flex
+      flex-direction: column
+      align-items: end
+      justify-content: space-between
   //--стили главного блока
 
 //
@@ -136,3 +151,56 @@
   &__text
     border-bottom: 1px dashed
 //--стили элементов хедера
+
+//
+//
+//
+//
+//стили блока с погодой
+.weather
+  transform: translate(-61px, 13px)
+  width: 182px
+  display: flex
+  justify-content: space-between
+  &__text
+    display: flex
+    flex-direction: column
+  &__icons
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: end
+  &__temperature
+    font-weight: 400
+    font-size: 48px
+    line-height: 56px
+  &__precipitation
+    font-weight: 300
+    font-size: 20px
+    line-height: 32px
+  &__location
+    font-weight: 300
+    font-size: 16px
+    line-height: 24px
+    &__icon
+      max-height: 22px
+  //фон блока с погодой
+  &-background
+    transform: translate(127px, 612px)
+    grid-column: 3/10
+    grid-row-start: 1
+    width: 761px
+    height: 312px
+    background-color: #000000a3
+    mask-image: url("../img/masks/weather-mask.svg")
+    mask-repeat: no-repeat
+    mask-position: bottom left
+    -webkit-mask-image: url("../img/masks/weather-mask.svg")
+    -webkit-mask-repeat: no-repeat
+    -webkit-mask-position: bottom left
+  &-outline
+    transform: translate(39px, 611px)
+    grid-column: 3/10
+    grid-row-start: 1
+    z-index: 10
+  //--фон блока с погодой
