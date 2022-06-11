@@ -28,8 +28,8 @@
   &-top
     padding-top: 2px
     border-bottom: 1px solid #3d3c3c14
+    height: 80px
     &__container
-      height: 80px
       display: grid
       align-items: center
       grid-template-columns: 1fr 66px 1fr
@@ -42,8 +42,73 @@
       display: flex
       justify-content: space-between
       width: 470px
-    //--стили хедера
+  //--стили хедера
 
+  //стили главного блока
+  &-main
+    padding-top: 24px
+    height: 730px
+    display: flex
+    justify-content: space-between
+    &__left
+      max-width: 440px
+      display: block
+      flex-direction: column
+      justify-content: space-between
+    &__waves
+      max-width: 182px
+      transform: translate(-50%, 0px)
+      margin-bottom: 20px
+    &__subtitle
+      margin-top: 0px
+      margin-bottom: 47px
+      margin-left: -1px
+    &__title
+      font-weight: 400
+      font-size: 96px
+      line-height: 96px
+      margin-top: 0px
+      transform: translateX(-5px)
+      margin-bottom: 41px
+    &__description
+      font-style: normal
+      font-weight: 300
+      font-size: 24px
+      line-height: 32px
+      margin-bottom: 57px
+    &__buttons
+      display: flex
+      justify-content: space-between
+      width: 100%
+    &__button
+      width: 200px
+      height: 64px
+      border: solid 1px $color-secondary
+      background-color: $color_light
+      border-radius: 8px
+      &_gold
+        background-color: $color-secondary
+        background: linear-gradient(0deg, #BCA56A, #BCA56A), #86C1DB
+      &_round
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 64px
+        width: 64px
+        border-radius: 50%
+    &__line
+      display: block
+      margin: 24px 31px
+      width: 1px
+      height: 48px
+      background-color: $color_secondary
+
+  //--стили главного блока
+
+//
+//
+//
+//стили элементов хедера
 .logo
   padding-top: 5px
   display: flex
@@ -57,7 +122,7 @@
     max-width: 73px
     z-index: 1
   &::after
-    transform: translate(0, -3px)
+    transform: translate(0, -4px)
     content: ' '
     position: relative
     background-color: $color_light
@@ -70,3 +135,4 @@
   margin-left: auto
   &__text
     border-bottom: 1px dashed
+//--стили элементов хедера
