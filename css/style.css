@@ -404,6 +404,10 @@ template {
   color: #3D3C3C;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #ffffff;
 }
