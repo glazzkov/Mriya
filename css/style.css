@@ -426,6 +426,14 @@ a {
   text-decoration: none;
 }
 
+.text_info {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  width: 168px;
+}
+
 .text_interactive {
   font-style: normal;
   font-weight: 500;
@@ -443,17 +451,16 @@ a {
   font-family: 'SangBleuKingdom';
 }
 
-.lang {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 80px;
+.text_discount {
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 44px;
 }
 
 .head-background {
+  pointer-events: none;
   min-width: 95vw;
   z-index: -1;
   position: absolute;
@@ -469,6 +476,8 @@ a {
 }
 
 .head-background__image {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-transform: translate(-190px, -87px);
           transform: translate(-190px, -87px);
   -ms-grid-column: 2;
@@ -708,6 +717,16 @@ a {
   z-index: 0;
 }
 
+.lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80px;
+}
+
 .sing-in {
   margin-right: 41px;
   margin-left: auto;
@@ -809,6 +828,7 @@ a {
 
 .choose-container {
   padding-top: 51px;
+  padding-bottom: 96px;
   max-height: 704px;
 }
 
@@ -832,6 +852,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 50px;
+  margin-bottom: 32px;
 }
 
 .choose-search__wrapper {
@@ -888,7 +909,158 @@ a {
   line-height: 32px;
 }
 
+.tabs {
+  position: relative;
+  width: 100%;
+  max-height: 304px;
+}
+
+.tabs__list {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+  border-bottom: 1px solid #3d3c3c14;
+}
+
+.tabs__item {
+  margin: 0;
+}
+
+.tabs__item:not(last-child) {
+  margin-right: 48px;
+}
+
+.tabs__btn {
+  padding: 0px;
+  background-color: transparent;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tabs__btn_active {
+  pointer-events: none;
+  color: #BCA56A;
+  border-bottom: 2px solid #BCA56A;
+}
+
+.tabs__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  top: 0px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #f3f3f3;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tabs__arrow_prev {
+  right: 56px;
+}
+
+.tabs__arrow_next {
+  right: 0px;
+}
+
+.tabs__content {
+  height: 264px;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tabs__content_active {
+  display: block;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.content-link {
+  position: relative;
+  width: 360px;
+  height: 232px;
+  border-radius: 8px;
+  background-color: #c5c0c764;
+  overflow: hidden;
+}
+
+.content-link:not(last-child) {
+  margin-right: 40px;
+}
+
+.content-link::after {
+  position: absolute;
+  content: ' ';
+  height: 186px;
+  width: 220px;
+  background: rgba(0, 0, 0, 0.56);
+  border-radius: 0% 100% 0% 0%;
+  bottom: -15px;
+  left: -23px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.content-link:hover::after {
+  width: 360px;
+  height: 232px;
+  height: 500px;
+  width: 1000px;
+}
+
+.content-link__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content-link__info {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  padding-top: 47px;
+}
+
 .in-development {
-  background-color: #0000002d;
+  border: solid 1px red;
 }
 /*# sourceMappingURL=style.css.map */

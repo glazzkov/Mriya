@@ -138,6 +138,7 @@
       </section>
       <!-- /.head-main -->
     </div>
+    <!-- /.head -->
     <section class="choose">
       <div class="choose-container container">
         <h2 class="choose__title text_title" id="choose-your-vacation">
@@ -178,7 +179,125 @@
           </div>
           <button class="choose-search__button text_light">Найти</button>
         </form>
+        <!-- /.choose-search -->
+        <div class="tabs">
+          <ul class="tabs__list">
+            <li class="tabs__item">
+              <button
+                class="text_interactive tabs__btn tabs__btn_active"
+                data-tabs-path="tab1"
+              >
+                Спецпредложения
+              </button>
+            </li>
+            <li class="tabs__item">
+              <button class="text_interactive tabs__btn" data-tabs-path="tab2">
+                Афиша
+              </button>
+            </li>
+            <li class="tabs__item">
+              <button class="text_interactive tabs__btn" data-tabs-path="tab3">
+                Категории отдыха
+              </button>
+            </li>
+          </ul>
+          <!-- /.tabs__list -->
+          <div
+            class="tabs__content tabs__content_active"
+            data-tabs-target="tab1"
+          >
+            <div class="content">
+              <a href="#" class="content-link">
+                <img
+                  src="img/pictures/offer-1.png"
+                  alt=""
+                  class="content-link__img"
+                />
+                <div class="content-link__info">
+                  <span class="text_light text_discount">-20%</span>
+                  <span class="text_light text_info">Для тех кто рядом</span>
+                </div>
+              </a>
+              <a href="#" class="content-link">
+                <img
+                  src="img/pictures/offer-2.jpg"
+                  alt=""
+                  class="content-link__img"
+                />
+                <div class="content-link__info">
+                  <span class="text_light text_discount">-10%</span>
+                  <span class="text_light text_info">Раннее бронирование</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="tabs__content" data-tabs-target="tab2">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                nulla veniam, corrupti repellat, impedit blanditiis nesciunt
+                quod aut at animi reprehenderit asperiores dolores doloribus
+                perferendis quidem corporis ipsam hic aperiam eum! Vitae velit
+                inventore nam error vel accusamus facere, earum, quod
+                repudiandae impedit dolorum? Ipsa quam quia dolor quasi eveniet,
+                ab odio repellat rem voluptates excepturi eaque praesentium
+                veniam officia facilis suscipit nam debitis, ut beatae culpa
+                modi ad at mollitia error consectetur? Iste libero beatae
+                deserunt reprehenderit officia rem laudantium unde illum,
+                facilis iure cupiditate quos perspiciatis non! Voluptatibus
+                fugit ullam nemo delectus aspernatur optio similique. Eaque,
+                temporibus minus! Temporibus adipisci quae, iste quas
+                dignissimos excepturi quis veritatis earum illum vero animi
+                nostrum officiis natus. Facilis laboriosam incidunt iste
+                delectus harum facere dolorum provident culpa, numquam cumque
+                illo eaque nemo exercitationem? Provident, repellat. Cum illo
+                eaque voluptatibus eius ad aperiam? Fugit, nobis vitae facere at
+                voluptates repellat natus amet, saepe, repudiandae facilis
+                necessitatibus et ducimus neque voluptatem temporibus minima
+                illo sunt voluptas minus a doloribus! Distinctio optio
+                laboriosam tempora neque, ad maiores molestias consequatur rerum
+                vitae iure commodi eveniet mollitia odio porro reprehenderit
+                impedit? Iure, porro quia. Accusamus aut officia optio quisquam
+                dicta reprehenderit commodi ad officiis libero enim.
+              </p>
+            </div>
+          </div>
+          <div class="tabs__content" data-tabs-target="tab3">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                nulla veniam, corrupti repellat, impedit blanditiis nesciunt
+                quod aut at animi reprehenderit asperiores dolores doloribus
+                perferendis quidem corporis ipsam hic aperiam eum! Vitae velit
+                inventore nam error vel accusamus facere, earum, quod
+                repudiandae impedit dolorum? Ipsa quam quia dolor quasi eveniet,
+                ab odio repellat rem voluptates excepturi eaque praesentium
+                veniam officia facilis suscipit nam debitis, ut beatae culpa
+                modi ad at mollitia error consectetur? Iste libero beatae
+                deserunt reprehenderit officia rem laudantium unde illum,
+                facilis iure cupiditate quos perspiciatis non! Voluptatibus
+                fugit ullam nemo delectus aspernatur optio similique. Eaque,
+                temporibus minus! Temporibus adipisci quae, iste quas
+                dignissimos excepturi quis veritatis earum illum vero animi
+                nostrum officiis natus. Facilis laboriosam incidunt iste
+                delectus harum facere dolorum provident culpa, numquam cumque
+                illo eaque nemo exercitationem? Provident, repellat.
+              </p>
+            </div>
+          </div>
+          <!-- /.tabs__content -->
+          <button class="tabs__arrow tabs__arrow_prev" aria-label="Назад">
+            <img src="img/icons/Left.svg" alt="" />
+          </button>
+          <button class="tabs__arrow tabs__arrow_next" aria-label="Вперед">
+            <img src="img/icons/Right.svg" alt="" />
+          </button>
+        </div>
+        <!-- /.tabs -->
       </div>
+      <!-- /.choose-container -->
     </section>
+    <!-- /.choose -->
+    <script src="js/tabs.js"></script>
   </body>
 </html>

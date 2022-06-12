@@ -1,6 +1,7 @@
 .head
   //стили фона
   &-background
+    pointer-events: none
     min-width: 95vw
     z-index: -1
     position: absolute
@@ -10,6 +11,7 @@
       grid-template-columns: 1fr 1fr
       overflow: hidden
     &__image
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
       transform: translate(-190px, -87px)
       grid-column: 2/10
       grid-row-start: 1
@@ -145,6 +147,11 @@
     width: 88px
     height: 3px
     z-index: 0
+
+.lang
+  display: flex
+  justify-content: space-between
+  width: 80px
 
 .sing-in
   margin-right: 41px
