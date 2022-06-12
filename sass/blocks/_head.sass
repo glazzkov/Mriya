@@ -1,16 +1,17 @@
 .head
   //стили фона
   &-background
+    min-width: 95vw
     z-index: -1
     position: absolute
     top: 0px
     &__grid
       display: grid
-      grid-template-columns: 1fr 0px 1fr
+      grid-template-columns: 1fr 1fr
       overflow: hidden
     &__image
-      transform: translate(-149px, -87px)
-      grid-column: 3/10
+      transform: translate(-190px, -87px)
+      grid-column: 2/10
       grid-row-start: 1
       max-height: 1024px
       min-height: 1024px
@@ -21,8 +22,8 @@
       -webkit-mask-repeat: no-repeat
       -webkit-mask-position: bottom left
     &__outline
-      transform: translate(-194px, -505px)
-      grid-column: 3/10
+      transform: translate(-235px, -505px)
+      grid-column: 2/10
       grid-row-start: 1
       z-index: -1
   //--стили фона
@@ -186,10 +187,10 @@
       max-height: 22px
   //фон блока с погодой
   &-background
-    transform: translate(127px, 612px)
-    grid-column: 3/10
+    transform: translate(88px, 612px)
+    grid-column: 2/10
     grid-row-start: 1
-    width: 761px
+    width: 100%
     height: 312px
     background-color: #000000a3
     mask-image: url("../img/masks/weather-mask.svg")
@@ -199,8 +200,8 @@
     -webkit-mask-repeat: no-repeat
     -webkit-mask-position: bottom left
   &-outline
-    transform: translate(39px, 611px)
-    grid-column: 3/10
+    transform: translate(-2px, 611px)
+    grid-column: 2/10
     grid-row-start: 1
     z-index: 10
   //--фон блока с погодой
