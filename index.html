@@ -1,334 +1,292 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mriya</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="head">
-      <div class="head-background">
-        <div class="head-background__grid">
-          <img
-            class="head-background__image"
-            src="img/pictures/background-image-2.gif"
-            alt=""
-          />
-          <img
-            class="head-background__image"
-            src="img/pictures/background-image-1.jpg"
-            alt=""
-          />
-          <img
-            class="head-background__outline"
-            src="img/masks/outline.svg"
-            alt=""
-          />
-          <div class="weather-background"></div>
-          <img
-            class="weather-outline"
-            src="img/masks/weather-outline.svg"
-            alt=""
-          />
-        </div>
-        <!-- /.head-background__grid -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mriya</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="head">
+    <div class="head-background">
+      <div class="head-background__grid">
+        <img class="head-background__image" src="img/pictures/background-image-2.gif" alt="" />
+        <img class="head-background__image" src="img/pictures/background-image-1.jpg" alt="" />
+        <img class="head-background__outline" src="img/masks/outline.svg" alt="" />
+        <div class="weather-background"></div>
+        <img class="weather-outline" src="img/masks/weather-outline.svg" alt="" />
       </div>
-      <!-- /.head-background -->
-      <header class="head-top text_interactive">
-        <div class="head-top__container container">
-          <div class="head-top__item">
-            <nav class="head-top__nav">
-              <a href="#" class="head-top__link">О комплексе</a>
-              <a href="#" class="head-top__link">Блог</a>
-              <a href="#" class="head-top__link">FAQ</a>
-              <a href="#" class="head-top__link">Контакты</a>
-            </nav>
-          </div>
-          <div class="logo">
-            <img class="logo__image" src="img/icons/logo.svg" alt="" />
-            <img class="logo__stars" src="img/icons/stars.svg" alt="" />
-          </div>
-          <div class="head-top__item">
-            <div class="lang">
-              <span class="lang__ru">Ru</span>
-              <a href="#" class="lang__eng">Eng</a>
-            </div>
-            <a class="sing-in text_light">
-              <img src="img/icons/key.svg" alt="" />
-              <span class="sing-in__text text_light">Вход</span>
-            </a>
-            <a href="tel:+78005006847" class="phone-number text_light"
-              >8 800 500 6847</a
-            >
-          </div>
+      <!-- /.head-background__grid -->
+    </div>
+    <!-- /.head-background -->
+    <header class="head-top text_interactive">
+      <div class="head-top__container container">
+        <div class="head-top__item">
+          <nav class="head-top__nav">
+            <a href="#" class="head-top__link">О комплексе</a>
+            <a href="#" class="head-top__link">Блог</a>
+            <a href="#" class="head-top__link">FAQ</a>
+            <a href="#" class="head-top__link">Контакты</a>
+          </nav>
         </div>
-      </header>
-      <!-- /.head-top -->
-      <section class="head-main container">
-        <div class="head-main-left">
-          <img class="head-main__waves" src="img/icons/waves.svg" alt="" />
-          <h3 class="head-main__subtitle text_interactive">
-            Family & Health Club
-          </h3>
-          <h1 class="head-main__title text_title">Mriya Resort</h1>
-          <p class="head-main__description">
-            Российский курорт для всей семьи на берегу черного моря
-          </p>
-          <div class="head-main__buttons">
-            <button
-              class="head-main__button head-main__button_gold text_interactive text_light"
-            >
-              Найти номер
-            </button>
-            <button class="head-main__button text_interactive">3D тур</button>
+        <div class="logo">
+          <img class="logo__image" src="img/icons/logo.svg" alt="" />
+          <img class="logo__stars" src="img/icons/stars.svg" alt="" />
+        </div>
+        <div class="head-top__item">
+          <div class="lang">
+            <span class="lang__ru">Ru</span>
+            <a href="#" class="lang__eng">Eng</a>
           </div>
-          <span class="head-main__line"></span>
-          <a
-            href="#choose-your-vacation"
-            class="head-main__button head-main__button_round"
-          >
-            <img src="img/icons/down.svg" alt="" />
+          <a class="sing-in text_light">
+            <img src="img/icons/key.svg" alt="" />
+            <span class="sing-in__text text_light">Вход</span>
+          </a>
+          <a href="tel:+78005006847" class="phone-number text_light">8 800 500 6847</a>
+        </div>
+      </div>
+    </header>
+    <!-- /.head-top -->
+    <section class="head-main container">
+      <div class="head-main-left">
+        <img class="head-main__waves" src="img/icons/waves.svg" alt="" />
+        <h3 class="head-main__subtitle text_interactive">
+          Family & Health Club
+        </h3>
+        <h1 class="head-main__title text_title">Mriya Resort</h1>
+        <p class="head-main__description">
+          Российский курорт для всей семьи на берегу черного моря
+        </p>
+        <div class="head-main__buttons">
+          <button class="head-main__button head-main__button_gold text_interactive text_light">
+            Найти номер
+          </button>
+          <button class="head-main__button text_interactive">3D тур</button>
+        </div>
+        <span class="head-main__line"></span>
+        <a href="#choose-your-vacation" class="head-main__button head-main__button_round">
+          <img src="img/icons/down.svg" alt="" />
+        </a>
+      </div>
+      <!-- /.head-main-left -->
+      <div class="head-main-right">
+        <div class="head-main__sotial-networks">
+          <a href="#" class="head-main__sotial-link head-main__button head-main__button_round">
+            <img src="img/icons/Facebook.svg" alt="" />
+          </a>
+          <a href="#" class="head-main__sotial-link head-main__button head-main__button_round">
+            <img src="img/icons/Twitter.svg" alt="" />
+          </a>
+          <a href="#" class="head-main__sotial-link head-main__button head-main__button_round">
+            <img src="img/icons/Instagram.svg" alt="" />
           </a>
         </div>
-        <!-- /.head-main-left -->
-        <div class="head-main-right">
-          <div class="head-main__sotial-networks">
-            <a
-              href="#"
-              class="head-main__sotial-link head-main__button head-main__button_round"
-            >
-              <img src="img/icons/Facebook.svg" alt="" />
-            </a>
-            <a
-              href="#"
-              class="head-main__sotial-link head-main__button head-main__button_round"
-            >
-              <img src="img/icons/Twitter.svg" alt="" />
-            </a>
-            <a
-              href="#"
-              class="head-main__sotial-link head-main__button head-main__button_round"
-            >
-              <img src="img/icons/Instagram.svg" alt="" />
-            </a>
+        <div class="weather">
+          <div class="weather__icons">
+            <img class="weather__icon" src="img/icons/weather-icon.svg" alt="" />
+            <img class="weather__location__icon" src="img/icons/location-icon.png" alt="" />
           </div>
-          <div class="weather">
-            <div class="weather__icons">
-              <img
-                class="weather__icon"
-                src="img/icons/weather-icon.svg"
-                alt=""
-              />
-              <img
-                class="weather__location__icon"
-                src="img/icons/location-icon.png"
-                alt=""
-              />
-            </div>
-            <div class="weather__text">
-              <span class="weather__temperature text_light">27°</span>
-              <span class="weather__precipitation text_light">Облачно</span>
-              <span class="weather__location text_light">Ялта, Россия</span>
-            </div>
+          <div class="weather__text">
+            <span class="weather__temperature text_light">27°</span>
+            <span class="weather__precipitation text_light">Облачно</span>
+            <span class="weather__location text_light">Ялта, Россия</span>
           </div>
         </div>
-        <!-- /.head-main-right -->
-      </section>
-      <!-- /.head-main -->
+      </div>
+      <!-- /.head-main-right -->
+    </section>
+    <!-- /.head-main -->
+  </div>
+  <!-- /.head -->
+  <section class="choose">
+    <div class="choose-container container">
+      <h2 class="choose__title text_title" id="choose-your-vacation">
+        Выберите свой отдых
+      </h2>
+      <form class="choose-search">
+        <div class="choose-search__wrapper">
+          <input placeholder="Семейный отдых" type="text" class="choose-search__input" />
+          <img class="choose-search__icon" src="img/icons/arrow.svg" alt="" />
+        </div>
+        <div class="choose-search__wrapper">
+          <input placeholder="пт, 8 мая — вс, 17 мая" type="text" class="choose-search__input" />
+          <img class="choose-search__icon" src="img/icons/calendar.svg" alt="" />
+        </div>
+        <div class="choose-search__wrapper">
+          <input placeholder="2 взрослых  •  без детей  •  1 номер" type="text" class="choose-search__input" />
+          <img class="choose-search__icon" src="img/icons/human-icon.svg" alt="" />
+        </div>
+        <button class="choose-search__button text_light">Найти</button>
+      </form>
+      <!-- /.choose-search -->
+      <div class="tabs">
+        <ul class="tabs__list">
+          <li class="tabs__item">
+            <button class="text_interactive tabs__btn tabs__btn_active" data-tabs-path="tab1">
+              Спецпредложения
+            </button>
+          </li>
+          <li class="tabs__item">
+            <button class="text_interactive tabs__btn" data-tabs-path="tab2">
+              Афиша
+            </button>
+          </li>
+          <li class="tabs__item">
+            <button class="text_interactive tabs__btn" data-tabs-path="tab3">
+              Категории отдыха
+            </button>
+          </li>
+        </ul>
+        <!-- /.tabs__list -->
+        <div class="tabs__content tabs__content_active" data-tabs-target="tab1">
+          <div class="content">
+            <a href="#" class="content-link">
+              <img src="img/pictures/offer-1.png" alt="" class="content-link__img" />
+              <div class="content-link__info">
+                <span class="text_light text_discount">-20%</span>
+                <span class="text_light text_info">Для тех кто рядом</span>
+              </div>
+            </a>
+            <a href="#" class="content-link">
+              <img src="img/pictures/offer-2.jpg" alt="" class="content-link__img" />
+              <div class="content-link__info">
+                <span class="text_light text_discount">-10%</span>
+                <span class="text_light text_info">Раннее бронирование</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="tabs__content" data-tabs-target="tab2">
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              nulla veniam, corrupti repellat, impedit blanditiis nesciunt
+              quod aut at animi reprehenderit asperiores dolores doloribus
+              perferendis quidem corporis ipsam hic aperiam eum! Vitae velit
+              inventore nam error vel accusamus facere, earum, quod
+              repudiandae impedit dolorum? Ipsa quam quia dolor quasi eveniet,
+              ab odio repellat rem voluptates excepturi eaque praesentium
+              veniam officia facilis suscipit nam debitis, ut beatae culpa
+              modi ad at mollitia error consectetur? Iste libero beatae
+              deserunt reprehenderit officia rem laudantium unde illum,
+              facilis iure cupiditate quos perspiciatis non! Voluptatibus
+              fugit ullam nemo delectus aspernatur optio similique. Eaque,
+              temporibus minus! Temporibus adipisci quae, iste quas
+              dignissimos excepturi quis veritatis earum illum vero animi
+              nostrum officiis natus. Facilis laboriosam incidunt iste
+              delectus harum facere dolorum provident culpa, numquam cumque
+              illo eaque nemo exercitationem? Provident, repellat. Cum illo
+              eaque voluptatibus eius ad aperiam? Fugit, nobis vitae facere at
+              voluptates repellat natus amet, saepe, repudiandae facilis
+              necessitatibus et ducimus neque voluptatem temporibus minima
+              illo sunt voluptas minus a doloribus! Distinctio optio
+              laboriosam tempora neque, ad maiores molestias consequatur rerum
+              vitae iure commodi eveniet mollitia odio porro reprehenderit
+              impedit? Iure, porro quia. Accusamus aut officia optio quisquam
+              dicta reprehenderit commodi ad officiis libero enim.
+            </p>
+          </div>
+        </div>
+        <div class="tabs__content" data-tabs-target="tab3">
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              nulla veniam, corrupti repellat, impedit blanditiis nesciunt
+              quod aut at animi reprehenderit asperiores dolores doloribus
+              perferendis quidem corporis ipsam hic aperiam eum! Vitae velit
+              inventore nam error vel accusamus facere, earum, quod
+              repudiandae impedit dolorum? Ipsa quam quia dolor quasi eveniet,
+              ab odio repellat rem voluptates excepturi eaque praesentium
+              veniam officia facilis suscipit nam debitis, ut beatae culpa
+              modi ad at mollitia error consectetur? Iste libero beatae
+              deserunt reprehenderit officia rem laudantium unde illum,
+              facilis iure cupiditate quos perspiciatis non! Voluptatibus
+              fugit ullam nemo delectus aspernatur optio similique. Eaque,
+              temporibus minus! Temporibus adipisci quae, iste quas
+              dignissimos excepturi quis veritatis earum illum vero animi
+              nostrum officiis natus. Facilis laboriosam incidunt iste
+              delectus harum facere dolorum provident culpa, numquam cumque
+              illo eaque nemo exercitationem? Provident, repellat.
+            </p>
+          </div>
+        </div>
+        <!-- /.tabs__content -->
+        <button class="tabs__arrow tabs__arrow_prev" aria-label="Назад">
+          <img src="img/icons/Left.svg" alt="" />
+        </button>
+        <button class="tabs__arrow tabs__arrow_next" aria-label="Вперед">
+          <img src="img/icons/Right.svg" alt="" />
+        </button>
+      </div>
+      <!-- /.tabs -->
     </div>
-    <!-- /.head -->
-    <section class="choose">
-      <div class="choose-container container">
-        <h2 class="choose__title text_title" id="choose-your-vacation">
-          Выберите свой отдых
-        </h2>
-        <form class="choose-search">
-          <div class="choose-search__wrapper">
-            <input
-              placeholder="Семейный отдых"
-              type="text"
-              class="choose-search__input"
-            />
-            <img class="choose-search__icon" src="img/icons/arrow.svg" alt="" />
-          </div>
-          <div class="choose-search__wrapper">
-            <input
-              placeholder="пт, 8 мая — вс, 17 мая"
-              type="text"
-              class="choose-search__input"
-            />
-            <img
-              class="choose-search__icon"
-              src="img/icons/calendar.svg"
-              alt=""
-            />
-          </div>
-          <div class="choose-search__wrapper">
-            <input
-              placeholder="2 взрослых  •  без детей  •  1 номер"
-              type="text"
-              class="choose-search__input"
-            />
-            <img
-              class="choose-search__icon"
-              src="img/icons/human-icon.svg"
-              alt=""
-            />
-          </div>
-          <button class="choose-search__button text_light">Найти</button>
-        </form>
-        <!-- /.choose-search -->
-        <div class="tabs">
-          <ul class="tabs__list">
-            <li class="tabs__item">
-              <button
-                class="text_interactive tabs__btn tabs__btn_active"
-                data-tabs-path="tab1"
-              >
-                Спецпредложения
-              </button>
-            </li>
-            <li class="tabs__item">
-              <button class="text_interactive tabs__btn" data-tabs-path="tab2">
-                Афиша
-              </button>
-            </li>
-            <li class="tabs__item">
-              <button class="text_interactive tabs__btn" data-tabs-path="tab3">
-                Категории отдыха
-              </button>
-            </li>
-          </ul>
-          <!-- /.tabs__list -->
-          <div
-            class="tabs__content tabs__content_active"
-            data-tabs-target="tab1"
-          >
-            <div class="content">
-              <a href="#" class="content-link">
-                <img
-                  src="img/pictures/offer-1.png"
-                  alt=""
-                  class="content-link__img"
-                />
-                <div class="content-link__info">
-                  <span class="text_light text_discount">-20%</span>
-                  <span class="text_light text_info">Для тех кто рядом</span>
-                </div>
-              </a>
-              <a href="#" class="content-link">
-                <img
-                  src="img/pictures/offer-2.jpg"
-                  alt=""
-                  class="content-link__img"
-                />
-                <div class="content-link__info">
-                  <span class="text_light text_discount">-10%</span>
-                  <span class="text_light text_info">Раннее бронирование</span>
-                </div>
-              </a>
+    <!-- /.choose-container -->
+  </section>
+  <!-- /.choose -->
+  <section class="info">
+    <img src="img/pictures/info-background-left.jpg" alt="" class="info__background info__background_left" />
+    <img src="img/pictures/info-background-right.jpg" alt="" class="info__background info__background_right" />
+    <div class="info-container">
+      <img src="img/icons/wave.svg" alt="" class="info__wave-img" />
+      <h2 class="info__title">
+        Mriya Resort & SPA —
+        <span class="info__title info__title_bold">
+          больше&nbspчем просто отдых
+        </span>
+      </h2>
+      <img src="img/icons/info-icon.svg" alt="" class="info__icon" />
+      <p class="info__text">
+        В окружении необычного природного ландшафта курорт становится
+        по-настоящему уникальным. Это место идеально для тех, кто больше гор
+        любит только море.
+      </p>
+      <a href="#" class="info__button head-main__button text_interactive">О комплексе</a>
+    </div>
+  </section>
+  <!-- /.info -->
+  <section class="allinclusive">
+    <div class="allinclusive-container container">
+      <div class="allinclusive__background">
+        <img class="allinclusive__background_img allinclusive__background_left"
+          src="img/pictures/allinclusive-background-left.svg" alt="">
+        <img class="allinclusive__background_img allinclusive__background_right"
+          src="img/pictures/allinclusive-background-right.svg" alt="">
+      </div>
+      <h2 class="allinclusive__title text_title">Все включено</h2>
+      <div class="swiper__buttons">
+        <button class="swiper__button swiper__button_prev">
+          <img src="img/icons/Left-white.svg" alt="">
+        </button>
+        <button class="swiper__button swiper__button_next">
+          <img src="img/icons/Right-white.svg" alt="">
+        </button>
+      </div>
+      <div class="swiper in-development">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper__content swiper__content_main">
+
             </div>
           </div>
-          <div class="tabs__content" data-tabs-target="tab2">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                nulla veniam, corrupti repellat, impedit blanditiis nesciunt
-                quod aut at animi reprehenderit asperiores dolores doloribus
-                perferendis quidem corporis ipsam hic aperiam eum! Vitae velit
-                inventore nam error vel accusamus facere, earum, quod
-                repudiandae impedit dolorum? Ipsa quam quia dolor quasi eveniet,
-                ab odio repellat rem voluptates excepturi eaque praesentium
-                veniam officia facilis suscipit nam debitis, ut beatae culpa
-                modi ad at mollitia error consectetur? Iste libero beatae
-                deserunt reprehenderit officia rem laudantium unde illum,
-                facilis iure cupiditate quos perspiciatis non! Voluptatibus
-                fugit ullam nemo delectus aspernatur optio similique. Eaque,
-                temporibus minus! Temporibus adipisci quae, iste quas
-                dignissimos excepturi quis veritatis earum illum vero animi
-                nostrum officiis natus. Facilis laboriosam incidunt iste
-                delectus harum facere dolorum provident culpa, numquam cumque
-                illo eaque nemo exercitationem? Provident, repellat. Cum illo
-                eaque voluptatibus eius ad aperiam? Fugit, nobis vitae facere at
-                voluptates repellat natus amet, saepe, repudiandae facilis
-                necessitatibus et ducimus neque voluptatem temporibus minima
-                illo sunt voluptas minus a doloribus! Distinctio optio
-                laboriosam tempora neque, ad maiores molestias consequatur rerum
-                vitae iure commodi eveniet mollitia odio porro reprehenderit
-                impedit? Iure, porro quia. Accusamus aut officia optio quisquam
-                dicta reprehenderit commodi ad officiis libero enim.
-              </p>
-            </div>
+          <div class="swiper-slide">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum incidunt, quo, a facilis magni libero quis
+              blanditiis nulla labore, dignissimos nostrum dicta ex dolor? Sunt iusto vero error magnam velit.</p>
           </div>
-          <div class="tabs__content" data-tabs-target="tab3">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                nulla veniam, corrupti repellat, impedit blanditiis nesciunt
-                quod aut at animi reprehenderit asperiores dolores doloribus
-                perferendis quidem corporis ipsam hic aperiam eum! Vitae velit
-                inventore nam error vel accusamus facere, earum, quod
-                repudiandae impedit dolorum? Ipsa quam quia dolor quasi eveniet,
-                ab odio repellat rem voluptates excepturi eaque praesentium
-                veniam officia facilis suscipit nam debitis, ut beatae culpa
-                modi ad at mollitia error consectetur? Iste libero beatae
-                deserunt reprehenderit officia rem laudantium unde illum,
-                facilis iure cupiditate quos perspiciatis non! Voluptatibus
-                fugit ullam nemo delectus aspernatur optio similique. Eaque,
-                temporibus minus! Temporibus adipisci quae, iste quas
-                dignissimos excepturi quis veritatis earum illum vero animi
-                nostrum officiis natus. Facilis laboriosam incidunt iste
-                delectus harum facere dolorum provident culpa, numquam cumque
-                illo eaque nemo exercitationem? Provident, repellat.
-              </p>
-            </div>
-          </div>
-          <!-- /.tabs__content -->
-          <button class="tabs__arrow tabs__arrow_prev" aria-label="Назад">
-            <img src="img/icons/Left.svg" alt="" />
-          </button>
-          <button class="tabs__arrow tabs__arrow_next" aria-label="Вперед">
-            <img src="img/icons/Right.svg" alt="" />
-          </button>
+          <div class="swiper-slide">Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные
+            тексты. О обеспечивает себя лучше инициал его имеет! Буквоград жаренные напоивший предложения ipsum, снова
+            его вдали это, речью, правилами всемогущая дал?</div>
         </div>
-        <!-- /.tabs -->
       </div>
-      <!-- /.choose-container -->
-    </section>
-    <!-- /.choose -->
-    <section class="info">
-      <img
-        src="img/pictures/info-background-left.jpg"
-        alt=""
-        class="info__background info__background_left"
-      />
-      <img
-        src="img/pictures/info-background-right.jpg"
-        alt=""
-        class="info__background info__background_right"
-      />
-      <div class="info-container">
-        <img src="img/icons/wave.svg" alt="" class="info__wave-img" />
-        <h2 class="info__title">
-          Mriya Resort & SPA —
-          <span class="info__title info__title_bold">
-            больше&nbspчем просто отдых
-          </span>
-        </h2>
-        <img src="img/icons/info-icon.svg" alt="" class="info__icon" />
-        <p class="info__text">
-          В окружении необычного природного ландшафта курорт становится
-          по-настоящему уникальным. Это место идеально для тех, кто больше гор
-          любит только море.
-        </p>
-        <a href="#" class="info__button head-main__button text_interactive"
-          >О комплексе</a
-        >
-      </div>
-    </section>
-    <!-- /.info -->
-    <script src="js/tabs.js"></script>
-  </body>
+    </div>
+  </section>
+  <!-- /.allinclusive -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

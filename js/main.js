@@ -1,3 +1,25 @@
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper__button_next",
+    prevEl: ".swiper__button_prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelector(".tabs");
   const tabsBtn = document.querySelectorAll(".tabs__btn");
